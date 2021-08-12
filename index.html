@@ -1,25 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .flex {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .round{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            font-size: 10px;;
+            float: right;
+        }
+        .middle {
+            margin-left: 700px;
+        }
+        .foot {
+            margin-top: 265px;
+            margin-left: -30px;
+        }
+    </style>
+
     <head>
-        <title>Nathan's Google Homepage OdinProject</title>
+        <title>Nathan's Google OdinProject</title>
     </head>
     <body >
         <div class="flex">
-            <ul class="leftalign" style="list-style-type: none;">
-                <li>About</li>
-                <li>Store</li>
-            </ul>
-            <ul class="rightalign" style="list-style-type: none;">
-                <li>Gmail</li>
-                <li>Images</li>
-                <li></li>
-                <li>
-                    <img src="ying-yang.png">
-                </li>
-            </ul>
+            <header></header>
+                <ul style="list-style-type: none;">
+                    <li style="float: left; margin-left: -25px;">
+                        About &#160;&#160; Store
+                    </li>
+                    <button class="round">Sign in</button>
+                    <li style="float: right;">
+                        Gmail &#160;&#160; Images &#160;
+                    </li>
+                </ul>
+            </header>
         </div>
-
-        <img style="margin-top: 200px;" 
-            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div>
+            <div class="middle">
+                <img style="margin-top: 200px;" 
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+            <div>
+                <form style="margin-left: 635px;">
+                    <input type="text" size="45px;">
+                </form> 
+                <p></p>
+                <button style="margin-left: 685px;">Google Search</button>
+                <button style="margin-left: 80px;">I'm Feeling Lucky</button>
+            </div>
+        </div>
+        <div>
+            <footer class="foot">
+                <ul style="list-style-type: none;">
+                    <li style="float: left"> 
+                        Advertising &#160;&#160; Business &#160;&#160; How Search Works
+                    </li>
+                    <li style="float: right;">
+                        Privacy f &#160;&#160; Terms &#160;&#160; Settings
+                    </li>
+                </ul>
+            </footer>
+        </div>
     </body>
     </html>
